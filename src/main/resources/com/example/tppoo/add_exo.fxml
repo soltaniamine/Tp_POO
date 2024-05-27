@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="290.0" prefWidth="600.0" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.front.AddExo">
+   <children>
+      <Button fx:id="myButton" layoutX="260.0" layoutY="216.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="81.0" text="Ajouter" />
+      <TextField fx:id="consigneField" layoutX="107.0" layoutY="152.0" promptText="Consigne" />
+      <TextField fx:id="materielField" layoutX="107.0" layoutY="81.0" promptText="Materiel" />
+      <AnchorPane prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #0282c2;">
+         <children>
+            <Text fill="WHITE" layoutX="149.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Modifier/Ajouter Exo">
+               <font>
+                  <Font name="Product Sans Bold" size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

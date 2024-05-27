@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="530.0" prefWidth="600.0" styleClass="create_account" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.front.AddAppointment">
+   <children>
+      <AnchorPane prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #0282c2;">
+         <children>
+            <Text fill="WHITE" layoutX="163.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Nouveau rendez-vous" textAlignment="CENTER">
+               <font>
+                  <Font name="Product Sans Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="freeCreneaux" layoutX="175.0" layoutY="205.0" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: white; -fx-border-color: #0282c2; -fx-border-radius: 14; -fx-background-radius: 14;" />
+      <Text layoutX="11.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Créneau Libre:" textAlignment="CENTER" wrappingWidth="150.0">
+         <font>
+            <Font name="Product Sans Bold" size="18.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="appointmentType" layoutX="215.0" layoutY="77.0" prefHeight="37.0" prefWidth="213.0" style="-fx-background-color: white; -fx-border-color: #0282c2; -fx-border-radius: 14; -fx-background-radius: 14;" />
+      <Text layoutX="14.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Type de Rendez-vous:" textAlignment="CENTER" wrappingWidth="194.0">
+         <font>
+            <Font name="Product Sans Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="add" layoutX="249.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleAddButtonClicked" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0282C2; -fx-pref-width: 100; -fx-pref-height: 25; -fx-font-weight: bold; -fx-background-radius: 14;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="Product Sans Bold" size="20.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="patientType" layoutX="196.0" layoutY="137.0" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: #0282c2; -fx-border-radius: 14; -fx-background-radius: 14;" />
+      <Text layoutX="14.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Adultes/Enfants:" textAlignment="CENTER" wrappingWidth="150.0">
+         <font>
+            <Font name="Product Sans Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nom" layoutX="122.0" layoutY="275.0" prefHeight="36.0" prefWidth="308.0" promptText="Nom" style="-fx-border-width: 0 0 1 0; -fx-border-color: black; -fx-background-color: white;" />
+      <TextField fx:id="prenom" layoutX="122.0" layoutY="338.0" prefHeight="36.0" prefWidth="308.0" promptText="Prenom" style="-fx-border-width: 0 0 1 0; -fx-border-color: black; -fx-background-color: white;" />
+      <TextField fx:id="age" layoutX="122.0" layoutY="399.0" prefHeight="36.0" prefWidth="66.0" promptText="Age" style="-fx-border-width: 0 0 1 0; -fx-border-color: black; -fx-background-color: white;" />
+      <Text fx:id="indication" fill="#d92511" layoutX="158.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="285.0" />
+   </children>
+</AnchorPane>

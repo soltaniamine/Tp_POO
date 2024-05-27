@@ -1,0 +1,164 @@
+/* Style for the hyperlink when hovered over */
+.create_account {
+    -fx-font-family: 'Product Sans';     /* Font family */
+    -fx-font-size: 18px;          /* Font size */
+    -fx-cursor: hand ;
+}
+
+.log-in {
+    -fx-font-family: 'Product Sans';     /* Font family */
+    -fx-font-size: 18px;          /* Font size */
+    -fx-cursor: hand ;
+}
+
+
+.connection {
+     -fx-font-family: 'Product Sans';     /* Font family */
+     -fx-font-size: 18px;          /* Font size */
+     -fx-background-color :  #0282c2 ;
+     -fx-background-radius : 14 ;
+     -fx-font-weight : bold;
+     -fx-pref-width: 200px;    /* Preferred width */
+     -fx-pref-height: 50px;    /* Preferred height */
+     -fx-cursor: hand ;
+}
+
+.connection:hover {
+     -fx-font-family: 'Product Sans';     /* Font family */
+     -fx-font-size: 18px;          /* Font size */
+     -fx-background-color :  #0282c2 ;
+     -fx-background-radius : 14 ;
+     -fx-font-weight : bold;
+     -fx-opacity : 0.95;
+     -fx-pref-width: 200px;    /* Preferred width */
+     -fx-pref-height: 50px;    /* Preferred height */
+     -fx-cursor: hand ;
+}
+
+
+
+
+.new-account {
+     -fx-font-family: 'Product Sans';     /* Font family */
+     -fx-font-size: 18px;          /* Font size */
+     -fx-background-color :  #0282c2 ;
+     -fx-background-radius : 14 ;
+     -fx-font-weight : bold;
+     -fx-pref-width: 200px;    /* Preferred width */
+     -fx-pref-height: 50px;    /* Preferred height */
+     -fx-cursor: hand ;
+}
+
+.new-account:hover {
+     -fx-font-family: 'Product Sans';     /* Font family */
+     -fx-font-size: 18px;          /* Font size */
+     -fx-background-color :  #0282c2 ;
+     -fx-background-radius : 14 ;
+     -fx-font-weight : bold;
+     -fx-opacity : 0.95;
+     -fx-pref-width: 200px;    /* Preferred width */
+     -fx-pref-height: 50px;    /* Preferred height */
+     -fx-cursor: hand ;
+}
+
+
+.non-selected-buttons {
+    -fx-background-color: transparent;
+    -fx-font-family: 'Product Sans Bold';
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 32.0;
+    -fx-pref-width: 167.0;
+    -fx-font-size: 13px;
+    -fx-cursor: hand ;
+}
+
+.non-selected-buttons: hover {
+    -fx-opacity: 0.6;
+    -fx-font-family: 'Product Sans Bold';
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 32.0;
+    -fx-pref-width: 167.0;
+    -fx-font-size: 13px;
+    -fx-cursor: hand ;
+}
+.non-selected-buttons: active {
+    -fx-opacity: 0.6;
+    -fx-font-family: 'Product Sans Bold';
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-pref-height: 32.0;
+    -fx-pref-width: 167.0;
+    -fx-font-size: 13px;
+    -fx-cursor: hand ;
+}
+.selected-buttons {
+    -fx-background-color: white;
+    -fx-font-family: 'Product Sans Bold';
+    -fx-font-weight: bold;
+    -fx-text-fill: #0282c2;
+    -fx-pref-height: 32.0;
+    -fx-pref-width: 167.0;
+    -fx-font-size: 13px;
+    -fx-cursor: hand ;
+}
+
+.selected-buttons:hover {
+    -fx-opacity: 0.9;
+    -fx-font-family: 'Product Sans Bold';
+    -fx-font-weight: bold;
+    -fx-text-fill: #0282c2;
+    -fx-pref-height: 32.0;
+    -fx-pref-width: 167.0;
+    -fx-font-size: 13px;
+    -fx-cursor: hand ;
+}
+
+.help-buttons {
+     -fx-background-color: transparent;
+     -fx-cursor: hand ;
+     -fx-pref-height: 45.0;
+     -fx-pref-width: 45.0;
+}
+.help-buttons:hover {
+     -fx-background-color: #eff3f5;
+}
+
+.refresh-buttons {
+     -fx-background-color: #5BC0DE;
+     -fx-cursor: hand ;
+     -fx-pref-height: 45.0;
+     -fx-pref-width: 45.0;
+}
+.add-button {
+     -fx-background-color: #D92511;
+     -fx-cursor: hand ;
+     -fx-pref-height: 45.0;
+     -fx-pref-width: 45.0;
+}
+.search-button {
+    -fx-background-color: #3AAF7B;
+    -fx-cursor: hand ;
+    -fx-pref-height: 45.0;
+    -fx-pref-width: 45.0;
+}
+
+.logout {
+    -fx-background-color:transparent;
+    -fx-cursor: hand ;
+}
+.checkbox {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold ;
+    -fx-pref-height: 40;
+    -fx-pref-width: 120;
+    -fx-font-size: 14px;
+}
+.checkbox:hover {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold ;
+    -fx-pref-height: 40;
+    -fx-pref-width: 120;
+}
+

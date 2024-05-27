@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.front.QuestionViewController">
+    <Label fx:id="questionLabel" text="Question" />
+    <TextField fx:id="responseField" promptText="Enter your response" />
+    <TextField fx:id="scoreField" promptText="Enter the score" />
+    <Button text="Previous" onAction="#handlePrevious" />
+    <Button text="Next" onAction="#handleNext" />
+</VBox>

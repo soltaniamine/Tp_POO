@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="1114.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.front.PatientDetailsController">
+    <children>
+
+        <VBox prefHeight="702.0" prefWidth="886.0">
+            <children>
+                <AnchorPane fx:id="" prefHeight="630.0" prefWidth="856.0" style="-fx-background-color: #d4d5d6; -fx-min-width: 100%;">
+                    <children>
+                        <TabPane layoutX="-1.0" layoutY="-3.0" prefHeight="631.0" prefWidth="886.0" style="-fx-background-color: #fafafc;" tabClosingPolicy="UNAVAILABLE">
+                            <tabs>
+                                <Tab style="-fx-background-color: #fff; -fx-font-size: 18px; -fx-font-weight: 650; -fx-padding: 7px 10px;" text="Details">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="1029.0" style="-fx-background-color: #fff; -fx-font-weight: 700;">
+                                            <children>
+                                                <Label layoutX="40.0" layoutY="83.0" text="nom">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_firstname" layoutX="172.0" layoutY="76.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="39.0" layoutY="134.0" text="prenom">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_lastname" layoutX="172.0" layoutY="128.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="39.0" layoutY="181.0" text="Phone :">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_phone" layoutX="172.0" layoutY="175.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="4.0" layoutY="230.0" text="Lieu de naissance">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_email" layoutX="172.0" layoutY="224.0" prefHeight="34.0" prefWidth="481.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="474.0" layoutY="71.0" text="ID">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_nic" layoutX="606.0" layoutY="65.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="472.0" layoutY="121.0" text="Age">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <ComboBox fx:id="cb_gender" layoutX="607.0" layoutY="113.0" prefHeight="34.0" prefWidth="224.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;" />
+                                                <Label layoutX="432.0" layoutY="174.0" text="Date de naissance">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <DatePicker fx:id="d_dob" layoutX="609.0" layoutY="168.0" prefHeight="35.0" prefWidth="222.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;" />
+                                                <Label layoutX="37.0" layoutY="283.0" text="Address :">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_address" layoutX="172.0" layoutY="277.0" prefHeight="34.0" prefWidth="480.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Button fx:id="button_editPersonalDetails" layoutX="734.0" layoutY="505.0" mnemonicParsing="false" style="-fx-background-color: #2B3467; -fx-border-radius: 5px;" text="Confirmer" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </Button>
+                                                <Label layoutX="40.0" layoutY="25.0" text=" Details">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <Button fx:id="button_submitEditedPersonalDetails" layoutX="687.0" layoutY="376.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-radius: 5px;" textFill="WHITE">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND" />
+                                                    </cursor>
+                                                </Button>
+                                                <TextField fx:id="tf_address1" layoutX="173.0" layoutY="331.0" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="43.0" layoutY="337.0" text="Diplome">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                                <TextField fx:id="tf_address11" layoutX="649.0" layoutY="331.0" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                    <font>
+                                                        <Font name="Arial" size="18.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="543.0" layoutY="338.0" text="Profession">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+                        <Tab style="-fx-background-color: #fff; -fx-font-size: 18px; -fx-font-weight: 650; -fx-padding: 7px 10px; -fx-border: none;" text="Liste BO">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="237.0" style="-fx-background-color: #fafafc;">
+                                 <children>
+                                    <Label layoutX="58.0" layoutY="24.0" text="Medical Details">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane prefHeight="630.0" prefWidth="885.0" style="-fx-background-color: #fff; -fx-min-width: 100%;">
+                                       <children>
+                                           <TableView fx:id="table_record111" layoutX="-3.0" layoutY="72.0" prefHeight="548.0" prefWidth="885.0" AnchorPane.rightAnchor="3.0">
+                                               <columns>
+                                                   <TableColumn fx:id="tc_observationClinique" prefWidth="165.40471482276917" text="Observation Clinique" />
+                                                   <TableColumn fx:id="tc_projetTherapeutique" prefWidth="180.84912109375" text="Projet Thérapeutique" />
+                                                   <TableColumn fx:id="tc_questionsExercices" prefWidth="223.5396728515625" text="Questions / Exercices " />
+                                                   <TableColumn fx:id="tc_repenses" prefWidth="212.263916015625" text="Repenses" />
+                                                   <TableColumn fx:id="tc_scoreFinale" prefWidth="101.736083984375" text="Score" />
+                                               </columns>
+                                           </TableView>
+                                          <TextField fx:id="tf_search111" layoutX="78.0" layoutY="18.0" prefHeight="38.0" prefWidth="383.0" promptText="Search" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button fx:id="btn_filter111" layoutX="484.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #efefef; -fx-cursor: hand;" text="Filter">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                                <Tab style="-fx-background-color: #fff; -fx-font-size: 18px; -fx-font-weight: 650; -fx-padding: 7px 10px; -fx-border: none;" text="Liste des Rendez-Vous">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="237.0" style="-fx-background-color: #fafafc;">
+                                            <children>
+                                                <Label layoutX="58.0" layoutY="24.0" text="Medical Details">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="630.0" prefWidth="885.0" style="-fx-background-color: #fff; -fx-min-width: 100%;">
+                                                    <children>
+                                                        <TableView fx:id="table_appointments" layoutX="2.0" layoutY="80.0" prefHeight="548.0" prefWidth="885.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="tc_date" prefWidth="245.69156503677368" text="Date" />
+                                                                <TableColumn fx:id="tc_observation" prefWidth="637.9999847412109" text="Observation" />
+                                                            </columns>
+                                                        </TableView>
+                                                        <TextField fx:id="tf_search" layoutX="78.0" layoutY="18.0" prefHeight="38.0" prefWidth="383.0" promptText="Search" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                            <font>
+                                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                        <Button fx:id="btn_filter" layoutX="484.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #efefef; -fx-cursor: hand;" text="Filter">
+                                                            <font>
+                                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                            </font>
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+
+                                <Tab style="-fx-background-color: #fff; -fx-font-size: 18px; -fx-font-weight: 650; -fx-padding: 7px 10px; -fx-border: none;" text="Liste des Troubles">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="237.0" style="-fx-background-color: #fafafc;">
+                                            <children>
+                                                <Label layoutX="58.0" layoutY="24.0" text="Medical Details">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="630.0" prefWidth="885.0" style="-fx-background-color: #fff; -fx-min-width: 100%;">
+                                                    <children>
+                                                        <TableView fx:id="table_troubles" layoutX="2.0" layoutY="80.0" prefHeight="548.0" prefWidth="885.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="tc_trouble" prefWidth="374.06027841567993" text="Trouble" />
+                                                                <TableColumn fx:id="tc_categorie" prefWidth="157.93972778320312" text="Categorie" />
+                                                            </columns>
+                                                        </TableView>
+                                                        <TextField fx:id="tf_search_troubles" layoutX="78.0" layoutY="18.0" prefHeight="38.0" prefWidth="383.0" promptText="Search" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                            <font>
+                                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                        <Button fx:id="btn_filter_troubles" layoutX="484.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #efefef; -fx-cursor: hand;" text="Filter">
+                                                            <font>
+                                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                            </font>
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+
+                                <Tab style="-fx-background-color: #fff; -fx-font-size: 18px; -fx-font-weight: 650; -fx-padding: 7px 10px; -fx-border: none;" text="Liste des Objectifs">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="237.0" style="-fx-background-color: #fafafc;">
+                                            <children>
+                                                <Label layoutX="58.0" layoutY="24.0" text="Medical Details">
+                                                    <font>
+                                                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                                                    </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="630.0" prefWidth="885.0" style="-fx-background-color: #fff; -fx-min-width: 100%;">
+                                                    <children>
+                                                        <TableView fx:id="table_objectifs" layoutX="2.0" layoutY="80.0" prefHeight="548.0" prefWidth="885.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="tc_objectif" prefWidth="460.85373544692993" text="Objectif" />
+                                                                <TableColumn fx:id="tc_categorie1" prefWidth="228.14627075195312" text="Categorie" />
+                                                                <TableColumn fx:id="tc_score" prefWidth="195.39492797851562" text="Score" />
+                                                            </columns>
+                                                        </TableView>
+                                                        <TextField fx:id="tf_search_objectifs" layoutX="78.0" layoutY="18.0" prefHeight="38.0" prefWidth="383.0" promptText="Search" style="-fx-background-color: #efefef; -fx-border-radius: 5px; -fx-border-color: transparent transparent #91a2ff transparent;">
+                                                            <font>
+                                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                            </font>
+                                                        </TextField>
+                                                        <Button fx:id="btn_filter_objectifs" layoutX="484.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: #efefef; -fx-cursor: hand;" text="Filter">
+                                                            <font>
+                                                                <Font name="Arial Rounded MT Bold" size="18.0" />
+                                                            </font>
+                                                            <cursor>
+                                                                <Cursor fx:constant="HAND" />
+                                                            </cursor>
+                                                        </Button>
+                                                    </children>
+                                                </AnchorPane>
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </Tab>
+
+                            </tabs>
+                        </TabPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</HBox>

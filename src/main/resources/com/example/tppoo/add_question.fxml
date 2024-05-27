@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="355.0" prefWidth="600.0" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.front.AddQuestion">
+    <children>
+        <TabPane prefHeight="368.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tabLibre" text="Question Libre">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="334.0" prefWidth="600.0">
+                            <children>
+                                <TextField fx:id="libreQuestionField" layoutX="72.0" layoutY="84.0" promptText="Question" styleClass="custom-text-field" />
+                                <Button fx:id="libreAddButton" layoutX="263.0" layoutY="161.0" mnemonicParsing="false" style="-fx-background-color: #0282C2; -fx-background-radius: 14;" styleClass="login-button" text="Ajouter" textFill="WHITE" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabQCM" text="QCM">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="qcmQuestionField" layoutX="184.0" layoutY="30.0" promptText="Question" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmOption1Field" layoutX="38.0" layoutY="86.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 1" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmOption2Field" layoutX="215.0" layoutY="86.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 2" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmOption3Field" layoutX="393.0" layoutY="86.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 3" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmOption4Field" layoutX="38.0" layoutY="127.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 4" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmOption5Field" layoutX="215.0" layoutY="127.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 5" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmOption6Field" layoutX="393.0" layoutY="127.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 6" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmReponse1Field" layoutX="38.0" layoutY="170.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse 1" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmReponse4Field" layoutX="38.0" layoutY="206.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse 4" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmReponse2Field" layoutX="215.0" layoutY="170.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse 2" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmReponse5Field" layoutX="215.0" layoutY="206.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse 5" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmReponse3Field" layoutX="393.0" layoutY="170.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse 3" styleClass="custom-text-field" />
+                                <TextField fx:id="qcmReponse6Field" layoutX="393.0" layoutY="206.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse 6" styleClass="custom-text-field" />
+                                <Button fx:id="qcmAddButton" layoutX="257.0" layoutY="275.0" mnemonicParsing="false" style="-fx-background-color: #0282C2; -fx-background-radius: 14;" styleClass="login-button" text="Ajouter" textFill="WHITE" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabQCU" text="QCU">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="qcuQuestionField" layoutX="200.0" layoutY="34.0" promptText="Question" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuOption1Field" layoutX="33.0" layoutY="79.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 1" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuOption2Field" layoutX="207.0" layoutY="79.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 2" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuOption3Field" layoutX="392.0" layoutY="79.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 3" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuOption4Field" layoutX="33.0" layoutY="121.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 4" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuOption5Field" layoutX="207.0" layoutY="121.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 5" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuOption6Field" layoutX="392.0" layoutY="121.0" prefHeight="26.0" prefWidth="146.0" promptText="Option 6" styleClass="custom-text-field" />
+                                <TextField fx:id="qcuReponseField" layoutX="207.0" layoutY="188.0" prefHeight="26.0" prefWidth="146.0" promptText="Reponse" styleClass="custom-text-field" />
+                                <Button fx:id="qcuAddButton" layoutX="257.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: #0282C2; -fx-background-radius: 14;" styleClass="login-button" text="Ajouter" textFill="WHITE" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
